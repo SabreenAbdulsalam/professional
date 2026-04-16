@@ -1,0 +1,113 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  direction: rtl;
+  background: #800020;
+  color: white;
+}
+
+/* 🔝 التبويبات */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background: #5c0017;
+  padding: 15px;
+}
+
+.tabs button {
+  background: white;
+  color: #800020;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  background: #ffdede;
+}
+
+/* الأقسام */
+section {
+  padding: 40px;
+}
+
+/* الرئيسية */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* الاسم */
+.name {
+  font-size: 35px;
+  color: #ffdede;
+}
+
+/* الافتار */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+/* كرت */
+.card {
+  background: white;
+  color: #800020;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* زر */
+.btn {
+  background: white;
+  color: #800020;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* التواصل */
+.contact-box {
+  background: white;
+  color: #800020;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Popup */
+#popup {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8);
+  text-align:center;
+}
+
+#popup img {
+  width:300px;
+  margin-top:50px;
+}
+
+#popup span {
+  color:white;
+  font-size:30px;
+  cursor:pointer;
+}
+
+/* 📱 */
+@media (max-width:768px){
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+}
